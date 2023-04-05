@@ -1,0 +1,29 @@
+{
+    "name": "mikan/condor-gaming-group-test",
+    "authors": [
+        {
+            "name": "Milos Stankovic"
+        }
+    ],
+    "description": "A lightweight API aggregator that pulls data from multiple sources.",
+    "type": "project",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Controller\\": "src/Controller",
+            "DataSource\\": "src/DataSource"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": [
+            "@php vendor/bin/phpunit"
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
